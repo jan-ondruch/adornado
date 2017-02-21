@@ -9,7 +9,7 @@ $x3: #333;
 $x16: #161616;
 $link: #0090c9;
 $hover: #007db3;
-$s0: #00897b;
+$s0: #00897e;
 
 
 body {
@@ -17,7 +17,21 @@ body {
 	background-color: $f;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 	font-family: 'Lato', sans-serif;
+}
+
+h2 {
+	color: $s0;
+	font-size: 1.7em;
+	margin-top: 10px;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin-bottom: -18px;
+	margin-top: 0px;
+	padding-top: 24px;
 }
 
 .header {
@@ -30,29 +44,23 @@ body {
   width: 100%;
   padding-top:20%;
   padding-bottom:20%;
-  text-align: center;
 	color: $f;
 
 	.header-text {
 		h1 {
 			text-transform: uppercase;
-			font-size: 1em;
+			font-size: 1.2em;
 			margin: 0 20px;
 		}
 	}
 }
 
 .welcome {
-	text-align: center;
-	font-size: 1.1em;
 
 	p {
+		font-size: 1.4em;
 		margin: 0px;
 		padding: 30px 6px;
-	}
-
-	h3 {
-		margin-bottom: -18px;
 	}
 
 	&:nth-child(3) {
@@ -64,7 +72,38 @@ body {
 		url('../images/welcome.jpg') no-repeat center center;
 		background-size: cover;
 		width: 100%;
-		padding-top:8%;
-		padding-bottom:4%;
+		padding-top:8px;
+		padding-bottom:4px;
 	}
+
+	&:nth-child(4) {
+		background-color: $f2;
+	}
+}
+
+.service {
+	padding: 16px 16px;
+	padding-top: 32px;
+
+	img {
+		width: 150px;
+		height: 150px;
+	}
+
+	p {
+		font-size: 1.1em;
+	}
+}
+
+.contact {
+	background-color: $f2;
+	padding: 16px 16px;
+
+	h2 {
+		margin-top: 0px;
+	}
+}
+
+.footer {
+	padding: 16px;
 }

@@ -5,7 +5,19 @@ body {
   background-color: #fff;
   margin: 0;
   padding: 0;
+  text-align: center;
   font-family: 'Lato', sans-serif; }
+
+h2 {
+  color: #00897e;
+  font-size: 1.7em;
+  margin-top: 10px; }
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: -18px;
+  margin-top: 0px;
+  padding-top: 24px; }
 
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/microcontroller.jpg") no-repeat center center;
@@ -13,27 +25,42 @@ body {
   width: 100%;
   padding-top: 20%;
   padding-bottom: 20%;
-  text-align: center;
   color: #fff; }
   .header .header-text h1 {
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 0 20px; }
 
-.welcome {
-  text-align: center;
-  font-size: 1.1em; }
-  .welcome p {
-    margin: 0px;
-    padding: 30px 6px; }
-  .welcome h3 {
-    margin-bottom: -18px; }
-  .welcome:nth-child(3) {
-    color: #fff;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/welcome.jpg") no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    padding-top: 8%;
-    padding-bottom: 4%; }
+.welcome p {
+  font-size: 1.4em;
+  margin: 0px;
+  padding: 30px 6px; }
+.welcome:nth-child(3) {
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/welcome.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 4px; }
+.welcome:nth-child(4) {
+  background-color: #f2f2f2; }
+
+.service {
+  padding: 16px 16px;
+  padding-top: 32px; }
+  .service img {
+    width: 150px;
+    height: 150px; }
+  .service p {
+    font-size: 1.1em; }
+
+.contact {
+  background-color: #f2f2f2;
+  padding: 16px 16px; }
+  .contact h2 {
+    margin-top: 0px; }
+
+.footer {
+  padding: 16px; }
 
 /*# sourceMappingURL=style.css.map */
