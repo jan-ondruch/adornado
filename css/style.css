@@ -19,6 +19,9 @@ h3 {
   margin-top: 0px;
   padding-top: 24px; }
 
+:focus {
+  outline: none; }
+
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/microcontroller.jpg") no-repeat center center;
   background-size: cover;
@@ -61,6 +64,13 @@ h3 {
     margin-top: 0px; }
 
 .footer {
-  padding: 16px; }
+  padding-top: 16px;
+  padding-bottom: 4px; }
+  .footer div img {
+    width: 100px;
+    height: auto;
+    padding-bottom: 20px; }
+  .footer span {
+    font-size: 0.8em; }
 
 /*# sourceMappingURL=style.css.map */

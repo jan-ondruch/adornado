@@ -34,6 +34,8 @@ h3 {
 	padding-top: 24px;
 }
 
+:focus {outline:none;}
+
 .header {
 	background: linear-gradient(
     rgba(0, 0, 0, 0.45), 
@@ -105,5 +107,16 @@ h3 {
 }
 
 .footer {
-	padding: 16px;
+	padding-top: 16px;
+	padding-bottom: 4px;
+
+	div img {
+		width: 100px;
+		height: auto;
+		padding-bottom: 20px;
+	}
+
+	span {
+		font-size: 0.8em;
+	}
 }
