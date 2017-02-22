@@ -11,6 +11,7 @@ $x0: #000;
 $c: #ccc;
 $f2: #f2f2f2;
 $x3: #333;
+$x6: #666;
 $x16: #161616;
 $link: #0090c9;
 $hover: #007db3;
@@ -41,6 +42,7 @@ h3 {
 
 :focus {outline:none;}
 
+
 .header {
 	background: linear-gradient(
     rgba(0, 0, 0, 0.45), 
@@ -60,7 +62,28 @@ h3 {
 			margin: 0 20px;
 		}
 	}
+
+	@media screen and (min-width: 768px) {
+		.header-text {
+			h1 {
+				text-transform: uppercase;
+				font-size: 1.8em;
+				margin: 0 12%;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		.header-text {
+			h1 {
+				text-transform: uppercase;
+				font-size: 2.2em;
+				margin: 0 12%;
+			}
+		}
+	}
 }
+
 
 .welcome-wrapper {
 	@include wrapper($height: 10px, $width: 0px);
@@ -78,7 +101,7 @@ h3 {
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
       ),
-		  url('../images/welcome.jpg') no-repeat center center;
+		  url('../images/wires.jpg') no-repeat center center;
 			background-size: cover;
 	  }
 
@@ -95,7 +118,7 @@ h3 {
 
 	@media screen and (min-width: 600px) {
 		.welcome {
-			@include wrapper($height: 10px, $width: 16%);
+			@include wrapper($height: 5%, $width: 16%, $bottom: 5%);
 		}
 
 		p {
@@ -108,17 +131,32 @@ h3 {
 		}
 	}
 
-	@media screen and (min-width: 600px) {
-		.welcome-wrapper {
-			@include wrapper($height: 14px, $width: 0px);
+	@media screen and (min-width: 1200px) {
+		.welcome {
+
+			p {
+				&:nth-child(1) {
+					font-size: 28px;
+				} 
+			}
+
+			h3 {
+				font-size: 32px;
+				padding-bottom: 12px;
+			}
 		}
 	}
 }
 
 
-
 .service-wrapper {
-	@include wrapper($height: 16px); 
+	@include wrapper($height: 16px);
+	overflow: hidden;
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(246,246,246,0) 90%, rgba(242,242,242,1) 99%, rgba(242,242,242,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(246,246,246,0) 90%,rgba(242,242,242,1) 99%,rgba(242,242,242,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(246,246,246,0) 90%,rgba(242,242,242,1) 99%,rgba(242,242,242,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#f2f2f2',GradientType=0 );
+
 
 	.service {
 		@include wrapper();
@@ -130,6 +168,7 @@ h3 {
 	
 		p {
 			font-size: 18px;
+			color: $x6;
 		}
 	}
 
@@ -138,29 +177,98 @@ h3 {
 			@include wrapper($width: 16%);
 		}
 	}
+
 }
 
-.showcase {
-	@include wrapper($width: 0px);
-	background-color: $f2;
-
-	.image-grid {
-		display: flex;
-		flex-wrap: wrap;
-
-		img {
-			&:nth-child(1) {
-				padding-top: 10px;
-			}
-			padding-top: 2px;
+@media screen and (min-width: 980px) {
+	.service-wrapper {
+		.service {
+			display: inline-block;
+			vertical-align: top;
+			width: 280px;
+			@include wrapper($height: 4%, $bottom: 4%, $width: 2%);
 		}
 	}
 }
+
+
+.showcase {
+	@include wrapper($width: 0px);
+	background-color: $f;
+
+	h2 {
+		color: $x16;
+	}
+
+	.image-grid {
+
+   -webkit-column-count: 3;
+   -webkit-column-gap:   4px;
+   -moz-column-count:    3;
+   -moz-column-gap:      4px;
+   column-count:         3;
+   column-gap:           4px;
+
+
+	.image-container {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+  .image-grid {
+		-moz-column-count:    3;
+		-webkit-column-count: 3;
+		column-count:         3;
+		
+		@include wrapper($width: 10%);
+  }
+
+}
+
+@media (max-width: 800px) {
+  .image-grid {
+		-moz-column-count:    2;
+		-webkit-column-count: 2;
+		column-count:         2;
+  }
+}
+
+@media (max-width: 400px) {
+	.image-grid {
+		-moz-column-count:    1;
+		-webkit-column-count: 1;
+		column-count:         1;
+	 }
+}
+
+@media screen and (min-width: 600px) {
+	@include wrapper($height: 5%, $bottom: 5%);
+	
+	h2 {
+			font-size: 30px;
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+	h2 {
+			font-size: 32px;
+		}
+	}
+}
+
 
 .contact {
 	@include wrapper($bottom: 24px);
 	background-color: $f2;
 	overflow: hidden;
+
+	h2 {
+		color: $x16;
+	}
 
 	.contact-person {
 		p {
@@ -212,16 +320,32 @@ h3 {
 		}
 	}
 		
+	@media screen and (min-width: 600px) {
+		@include wrapper($height: 5%, $bottom: 5%);
+		
+		h2 {
+			font-size: 30px;
+		}
+	}
+
 	@media screen and (min-width: 768px) {
 		.contact-data {
 			width: 220px;
 			display: inline-block;
 			.contact-data-item {
-				@include wrapper($height: 10px, $width: 20px);
+				@include wrapper($height: 10px, $width: 20px, $bottom: 16%);
 			}
 		}
 	}
+
+
+	@media screen and (min-width: 1200px) {
+		h2 {
+			font-size: 32px;
+		}
+	}
 }
+
 
 .footer {
 	padding-top: 16px;
@@ -235,6 +359,7 @@ h3 {
 
 	span {
 		font-size: 0.8em;
+		color: $x6;
 	}
 
 	@media screen and (min-width: 600px) {
