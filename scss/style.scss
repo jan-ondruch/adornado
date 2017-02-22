@@ -208,8 +208,8 @@ h4 {
 		.service {
 			display: inline-block;
 			vertical-align: top;
-			width: 280px;
-			@include wrapper($height: 4%, $bottom: 4%, $width: 2%);
+			width: 282px;
+			@include wrapper($height: 4%, $bottom: 4%, $width: 1%);
 		}
 	}
 }
