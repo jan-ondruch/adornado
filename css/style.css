@@ -48,6 +48,23 @@ h3 {
       background-size: cover; }
     .welcome-wrapper .welcome:nth-child(3) {
       background-color: #f2f2f2; }
+  @media screen and (min-width: 400px) {
+    .welcome-wrapper .welcome {
+      padding: 10px 16px;
+      padding-bottom: 16px; } }
+  @media screen and (min-width: 600px) {
+    .welcome-wrapper .welcome {
+      padding: 10px 16%;
+      padding-bottom: 16px; }
+    .welcome-wrapper p {
+      font-size: 24px; }
+    .welcome-wrapper h3 {
+      font-size: 30px;
+      padding-bottom: 10px; } }
+  @media screen and (min-width: 600px) {
+    .welcome-wrapper .welcome-wrapper {
+      padding: 14px 0px;
+      padding-bottom: 16px; } }
 
 .service-wrapper {
   padding: 16px 8px;
@@ -60,6 +77,10 @@ h3 {
       height: 150px; }
     .service-wrapper .service p {
       font-size: 18px; }
+  @media screen and (min-width: 464px) {
+    .service-wrapper .service {
+      padding: 24px 16%;
+      padding-bottom: 16px; } }
 
 .showcase {
   padding: 24px 0px;
@@ -76,7 +97,8 @@ h3 {
 .contact {
   padding: 24px 8px;
   padding-bottom: 24px;
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  overflow: hidden; }
   .contact .contact-person {
     padding: 0px 0px;
     padding-bottom: 32px; }
@@ -105,6 +127,17 @@ h3 {
     .contact .contact-data .contact-data-item a {
       text-decoration: none;
       color: #00897e; }
+  @media screen and (min-width: 400px) {
+    .contact .contact-data .contact-data-item {
+      padding: 0px 20%;
+      padding-bottom: 16px; } }
+  @media screen and (min-width: 768px) {
+    .contact .contact-data {
+      width: 220px;
+      display: inline-block; }
+      .contact .contact-data .contact-data-item {
+        padding: 10px 20px;
+        padding-bottom: 16px; } }
 
 .footer {
   padding-top: 16px;
@@ -115,5 +148,12 @@ h3 {
     padding-bottom: 20px; }
   .footer span {
     font-size: 0.8em; }
+  @media screen and (min-width: 600px) {
+    .footer {
+      padding-top: 32px; }
+      .footer div img {
+        width: 120px;
+        height: auto;
+        padding-bottom: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -86,6 +86,33 @@ h3 {
 		  background-color: $f2;
 	  }
   }
+
+  @media screen and (min-width: 400px) {
+		.welcome {
+			@include wrapper($height: 10px, $width: 16px);
+		}
+	}
+
+	@media screen and (min-width: 600px) {
+		.welcome {
+			@include wrapper($height: 10px, $width: 16%);
+		}
+
+		p {
+			font-size: 24px;
+		}
+
+		h3 {
+			font-size: 30px;
+			padding-bottom: 10px;
+		}
+	}
+
+	@media screen and (min-width: 600px) {
+		.welcome-wrapper {
+			@include wrapper($height: 14px, $width: 0px);
+		}
+	}
 }
 
 
@@ -103,6 +130,12 @@ h3 {
 	
 		p {
 			font-size: 18px;
+		}
+	}
+
+	@media screen and (min-width: 464px) {
+		.service {
+			@include wrapper($width: 16%);
 		}
 	}
 }
@@ -127,6 +160,7 @@ h3 {
 .contact {
 	@include wrapper($bottom: 24px);
 	background-color: $f2;
+	overflow: hidden;
 
 	.contact-person {
 		p {
@@ -170,6 +204,22 @@ h3 {
 					color: $s0;
 				}
 		}
+
+		@media screen and (min-width: 400px) {
+			.contact-data-item {
+				@include wrapper($height: 0px, $width: 20%);
+			}
+		}
+	}
+		
+	@media screen and (min-width: 768px) {
+		.contact-data {
+			width: 220px;
+			display: inline-block;
+			.contact-data-item {
+				@include wrapper($height: 10px, $width: 20px);
+			}
+		}
 	}
 }
 
@@ -185,5 +235,15 @@ h3 {
 
 	span {
 		font-size: 0.8em;
+	}
+
+	@media screen and (min-width: 600px) {
+		padding-top: 32px;
+		
+		div img {
+			width: 120px;
+			height: auto;
+			padding-bottom: 20px;
+		}
 	}
 }
