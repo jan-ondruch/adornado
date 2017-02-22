@@ -34,32 +34,49 @@ h3 {
     font-size: 1.2em;
     margin: 0 20px; }
 
-.welcome p {
-  font-size: 1.4em;
-  margin: 0px;
-  padding: 30px 6px; }
-.welcome:nth-child(3) {
-  color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/welcome.jpg") no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  padding-top: 8px;
-  padding-bottom: 4px; }
-.welcome:nth-child(4) {
-  background-color: #f2f2f2; }
+.welcome-wrapper {
+  padding: 10px 0px;
+  padding-bottom: 16px; }
+  .welcome-wrapper .welcome {
+    padding: 10px 8px;
+    padding-bottom: 16px; }
+    .welcome-wrapper .welcome p {
+      font-size: 20px; }
+    .welcome-wrapper .welcome:nth-child(2) {
+      color: #fff;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/welcome.jpg") no-repeat center center;
+      background-size: cover; }
+    .welcome-wrapper .welcome:nth-child(3) {
+      background-color: #f2f2f2; }
 
-.service {
-  padding: 16px 16px;
-  padding-top: 32px; }
-  .service img {
-    width: 150px;
-    height: 150px; }
-  .service p {
-    font-size: 1.1em; }
+.service-wrapper {
+  padding: 16px 8px;
+  padding-bottom: 16px; }
+  .service-wrapper .service {
+    padding: 24px 8px;
+    padding-bottom: 16px; }
+    .service-wrapper .service img {
+      width: 150px;
+      height: 150px; }
+    .service-wrapper .service p {
+      font-size: 18px; }
+
+.showcase {
+  padding: 24px 0px;
+  padding-bottom: 16px;
+  background-color: #f2f2f2; }
+  .showcase .image-grid {
+    display: flex;
+    flex-wrap: wrap; }
+    .showcase .image-grid img {
+      padding-top: 2px; }
+      .showcase .image-grid img:nth-child(1) {
+        padding-top: 10px; }
 
 .contact {
-  background-color: #f2f2f2;
-  padding: 16px 16px; }
+  padding: 24px 8px;
+  padding-bottom: 24px;
+  background-color: #f2f2f2; }
   .contact h2 {
     margin-top: 0px; }
 

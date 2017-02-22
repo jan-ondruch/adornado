@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+@mixin wrapper($height: 24px, $width: 8px, $bottom: 16px) {
+	padding: $height $width;
+	padding-bottom: $bottom;
+}
+
 /* colors */
 $f: #fff;
 $x0: #000;
@@ -57,49 +62,71 @@ h3 {
 	}
 }
 
-.welcome {
+.welcome-wrapper {
+	@include wrapper($height: 10px, $width: 0px);
 
-	p {
-		font-size: 1.4em;
-		margin: 0px;
-		padding: 30px 6px;
-	}
+	.welcome {
+		@include wrapper($height: 10px);
 
-	&:nth-child(3) {
-		color: $f;
-		background: linear-gradient(
-      rgba(0, 0, 0, 0.7), 
-      rgba(0, 0, 0, 0.7)
-    ),
-		url('../images/welcome.jpg') no-repeat center center;
-		background-size: cover;
-		width: 100%;
-		padding-top:8px;
-		padding-bottom:4px;
-	}
+		p {
+			font-size: 20px;
+		}
 
-	&:nth-child(4) {
-		background-color: $f2;
+		&:nth-child(2) {
+			color: $f;
+		  background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),
+		  url('../images/welcome.jpg') no-repeat center center;
+			background-size: cover;
+	  }
+
+	  &:nth-child(3) {
+		  background-color: $f2;
+	  }
+  }
+}
+
+
+
+.service-wrapper {
+	@include wrapper($height: 16px); 
+
+	.service {
+		@include wrapper();
+
+		img {
+			width: 150px;
+			height: 150px;
+		}
+	
+		p {
+			font-size: 18px;
+		}
 	}
 }
 
-.service {
-	padding: 16px 16px;
-	padding-top: 32px;
+.showcase {
+	@include wrapper($width: 0px);
+	background-color: $f2;
 
-	img {
-		width: 150px;
-		height: 150px;
-	}
+	.image-grid {
+		display: flex;
+		flex-wrap: wrap;
 
-	p {
-		font-size: 1.1em;
+		img {
+			&:nth-child(1) {
+				padding-top: 10px;
+			}
+			padding-top: 2px;
+		}
 	}
 }
 
 .contact {
+	@include wrapper($bottom: 24px);
 	background-color: $f2;
-	padding: 16px 16px;
 
 	h2 {
 		margin-top: 0px;
