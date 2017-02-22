@@ -94,7 +94,7 @@ h4 {
 
 
 .welcome-wrapper {
-	@include wrapper($height: 10px, $width: 0px);
+	@include wrapper($height: 0px, $width: 0px, $bottom: 4px);
 
 	.welcome {
 		@include wrapper($height: 10px);
