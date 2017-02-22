@@ -29,6 +29,7 @@ h4 {
   outline: none; }
 
 .header {
+  margin-top: 55px;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/microcontroller.jpg") no-repeat center center;
   background-size: cover;
   width: 100%;
