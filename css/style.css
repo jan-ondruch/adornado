@@ -23,7 +23,7 @@ h3 {
   outline: none; }
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/microcontroller.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("images/microcontroller.jpg") no-repeat center center;
   background-size: cover;
   width: 100%;
   padding-top: 20%;
@@ -44,7 +44,7 @@ h3 {
       font-size: 20px; }
     .welcome-wrapper .welcome:nth-child(2) {
       color: #fff;
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/welcome.jpg") no-repeat center center;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/welcome.jpg") no-repeat center center;
       background-size: cover; }
     .welcome-wrapper .welcome:nth-child(3) {
       background-color: #f2f2f2; }
