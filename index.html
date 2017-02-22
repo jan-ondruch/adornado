@@ -15,19 +15,26 @@
 		  content=""/>	
 	<meta name="author" content="Jan Ondruch">
 
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="js/responsive-nav.js"></script>
 
 </head>
 	
 <body>
 
-	<!--
-	<div class="navbar-wrapper">
-		<div class="logo"></div>
-		<div class="navbar-items"></div>
-	</div>
-	-->
+	<header id="home">
+    <a href="#" class="logo" data-scroll>LOGO</a>
+    <nav class="nav-collapse">
+      <ul>
+        <li class="menu-item"><a href="#services" data-scroll>Services</a></li>
+        <li class="menu-item"><a href="#produkte" data-scroll>Produkte</a></li>
+        <li class="menu-item"><a href="#kontakt" data-scroll>Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
 
 	<div class="header">
 		<div class="header-text">
@@ -58,10 +65,12 @@
 	</div>
 
 
-	<div class="service-wrapper">
+	<div id="services" class="service-wrapper">
+		<h2>Services</h2>
+		<p>Pudding carrot cake sugar plum gummies cake apple pie tart cookie. Gummi bears toffee cupcake gingerbread chocolate apple pie tootsie roll chocolate.</p>
 		<div class="service">
 			<img src="images/entwicklung.jpg">
-			<h2>1.Entwicklung</h2>
+			<h4>1.Entwicklung</h4>
 			<p>
 				- Einsetzbare Technologien</br>
 				- Schaltungsentwicklung</br>
@@ -74,7 +83,7 @@
 
 		<div class="service">
 			<img src="images/design.jpg">
-			<h2>2.Design</h2>
+			<h4>2.Design</h4>
 			<p>
 				Der vorhandene Platz im Gehäuse wird durch die Formgebung der Elektronik effizient genutzt.
 			</p>
@@ -85,7 +94,7 @@
 
 		<div class="service">
 			<img src="images/fertigung.jpg">
-			<h2>3.Fertigung</h2>
+			<h4>3.Fertigung</h4>
 			<p>
 				Die Montage und Bestückung wird an effizient eingerichteten Arbeitsplätzen ausgeführt, dadurch ist eine hohe Qualität der Baugruppen gewährleistet.
 			</p>
@@ -96,8 +105,9 @@
 	</div>
 
 
-	<div class="showcase">
+	<div id="produkte" class="showcase">
 		<h2>Unsere Produkte</h2>
+		<p>Pudding carrot cake sugar plum gummies cake apple pie tart cookie. Gummi bears toffee cupcake gingerbread chocolate apple pie tootsie roll chocolate.</p>
 		<div class="image-grid">
 			<div class="image-container">
 				<img src="images/jjelectronics00.jpg">
@@ -121,7 +131,7 @@
 	</div>
 
 
-	<div class="contact">
+	<div id="kontakt" class="contact">
 		<h2>Kontakt</h2>
 		<img src="images/juergen.jpg">
 
@@ -158,10 +168,15 @@
 
 	<div class="footer">
 		<div>
-			<a href="#"><img src="images/logo.jpg"></img></a>
+			<a href="#home" data-scroll><img src="images/logo.jpg"></img></a>
 		</div>
 		<span>&copy; 2017 JJ electronics</span>
 	</div>
+
+	<script src="js/fastclick.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/fixed-responsive-nav.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 </body>
 </html> 
