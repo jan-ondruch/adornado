@@ -23,7 +23,7 @@ h3 {
   outline: none; }
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("images/microcontroller.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/microcontroller.jpg") no-repeat center center;
   background-size: cover;
   width: 100%;
   padding-top: 20%;
@@ -44,7 +44,7 @@ h3 {
       font-size: 20px; }
     .welcome-wrapper .welcome:nth-child(2) {
       color: #fff;
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/welcome.jpg") no-repeat center center;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/welcome.jpg") no-repeat center center;
       background-size: cover; }
     .welcome-wrapper .welcome:nth-child(3) {
       background-color: #f2f2f2; }
@@ -77,8 +77,34 @@ h3 {
   padding: 24px 8px;
   padding-bottom: 24px;
   background-color: #f2f2f2; }
-  .contact h2 {
-    margin-top: 0px; }
+  .contact .contact-person {
+    padding: 0px 0px;
+    padding-bottom: 32px; }
+    .contact .contact-person p {
+      font-size: 1.2em;
+      margin-bottom: 4px; }
+    .contact .contact-person span {
+      font-size: 1.5em; }
+  .contact .contact-data .contact-data-item {
+    padding: 0px 40px;
+    padding-bottom: 16px;
+    text-align: left; }
+    .contact .contact-data .contact-data-item i {
+      color: #00897e;
+      float: left;
+      font-size: 1.5em;
+      margin-right: 20px;
+      padding-top: 8px; }
+    .contact .contact-data .contact-data-item span {
+      display: block; }
+      .contact .contact-data .contact-data-item span:nth-child(2) {
+        text-transform: uppercase;
+        padding-bottom: 4px; }
+      .contact .contact-data .contact-data-item span:nth-child(3) {
+        color: #333; }
+    .contact .contact-data .contact-data-item a {
+      text-decoration: none;
+      color: #00897e; }
 
 .footer {
   padding-top: 16px;
