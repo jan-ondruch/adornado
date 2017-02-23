@@ -69,7 +69,6 @@ window.smoothScroll = (function (window, document, undefined) {
         anchor = anchor.offsetParent;
       } while (anchor);
     }
-    location = location - headerHeight;
     if ( location >= 0 ) {
       return location;
     } else {
