@@ -25,7 +25,7 @@
 	
 <body>
 
-	<header id="home">
+	<header>
 		<a href="#"><img src="images/logo.jpg" class="logo-image"></a>
     <a href="#" class="logo" data-scroll>JJ ELECTRONIC</a>
     <nav class="nav-collapse">
@@ -167,7 +167,7 @@
 
 	<div class="footer">
 		<div>
-			<a href="#home" data-scroll><img src="images/logo.jpg"></img></a>
+			<a href="#top" data-scroll><img src="images/logo.jpg"></img></a>
 		</div>
 		<span>&copy; 2017 JJ electronic</span>
 	</div>
@@ -176,6 +176,13 @@
   <script src="js/scroll.js"></script>
   <script src="js/fixed-responsive-nav.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <script>
+		$("a[href='#top']").click(function() {
+		   $("html, body").animate({ scrollTop: 0 }, "slow");
+		   return false;
+		});
+	</script>
 
 </body>
 </html> 

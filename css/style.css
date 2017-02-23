@@ -60,7 +60,7 @@ h4 {
     .welcome-wrapper .welcome p {
       font-size: 20px; }
     .welcome-wrapper .welcome h3 {
-      padding-bottom: 4%; }
+      padding-bottom: 3%; }
     .welcome-wrapper .welcome:nth-child(2) {
       color: #fff;
       background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/wires.jpg") no-repeat center center;
@@ -98,6 +98,8 @@ h4 {
     padding-bottom: 16px; }
   .service-wrapper h2 {
     margin-bottom: -2%; }
+  .service-wrapper h4 {
+    margin-bottom: 0px; }
   .service-wrapper .service {
     padding: 24px 8px;
     padding-bottom: 16px; }
@@ -119,7 +121,9 @@ h4 {
       padding-right: 16%; }
     .service-wrapper h2 {
       padding-top: 4%;
-      font-size: 30px; } }
+      font-size: 30px; }
+    .service-wrapper h4 {
+      margin-bottom: 5%; } }
   @media screen and (min-width: 1280px) {
     .service-wrapper h2 {
       font-size: 32px; } }
