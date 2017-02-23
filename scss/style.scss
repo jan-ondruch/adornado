@@ -155,7 +155,7 @@ h4 {
 
 			h3 {
 				font-size: 32px;
-				padding-bottom: 12px;
+				padding-bottom: 3%;
 			}
 		}
 	}
@@ -172,7 +172,7 @@ h4 {
       $f 10%
     );
 
-   p {
+  p {
 		font-size: 18px;
 		padding: 8px;
 		padding-bottom: 16px;
@@ -216,6 +216,12 @@ h4 {
 			padding-right: 16%;
 		}
 
+		p {
+			&:nth-child(2) {
+				font-size: 20px
+			}
+		}
+
 		h2 {
 			padding-top: 4%;
 			font-size: 30px;
@@ -256,7 +262,7 @@ h4 {
 
 	p {
 		font-size: 18px;
-		padding: 8px;
+		padding: 0px 8px;
 		padding-bottom: 16px;
 	}
 
@@ -328,6 +334,7 @@ h4 {
 	@media screen and (min-width: 1200px) {
 		h2 {
 				font-size: 32px;
+				padding-bottom: 2px;
 		}
 	}
 }

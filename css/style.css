@@ -85,7 +85,7 @@ h4 {
       font-size: 28px; }
     .welcome-wrapper .welcome h3 {
       font-size: 32px;
-      padding-bottom: 12px; } }
+      padding-bottom: 3%; } }
 
 .service-wrapper {
   padding: 16px 8px;
@@ -119,6 +119,8 @@ h4 {
     .service-wrapper p {
       padding-left: 16%;
       padding-right: 16%; }
+    .service-wrapper p:nth-child(2) {
+      font-size: 20px; }
     .service-wrapper h2 {
       padding-top: 4%;
       font-size: 30px; }
@@ -143,7 +145,7 @@ h4 {
     color: #161616; }
   .showcase p {
     font-size: 18px;
-    padding: 8px;
+    padding: 0px 8px;
     padding-bottom: 16px; }
   .showcase .image-grid {
     -webkit-column-count: 3;
@@ -187,7 +189,8 @@ h4 {
         padding-right: 16%; } }
   @media screen and (min-width: 1200px) {
     .showcase h2 {
-      font-size: 32px; } }
+      font-size: 32px;
+      padding-bottom: 2px; } }
 
 .contact {
   padding: 24px 8px;
