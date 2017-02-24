@@ -11,3 +11,4 @@ Clean up folders: images, minimize files.
 Replace Lorem Ipsum text.
 Improve header: better text, possibly CTA or make it more interactive.
 Improve image grid possibly: image captions, whatever.
+Add Favicon (JJ electronic logo).
