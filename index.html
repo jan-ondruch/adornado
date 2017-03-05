@@ -18,6 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
 	<script src="js/responsive-nav.js"></script>
 
@@ -69,37 +70,39 @@
 	<div id="services" class="service-wrapper">
 		<h2>Services</h2>
 		<p>Pudding carrot cake sugar plum gummies cake apple pie tart cookie. Gummi bears toffee cupcake gingerbread chocolate apple pie tootsie roll chocolate.</p>
-		<div class="service">
-			<img src="images/entwicklung.jpg">
-			<h4>1.Entwicklung</h4>
-			<p>
-				- Einsetzbare Technologien</br>
-				- Schaltungsentwicklung</br>
-				- Firmeware-Erstellung</br>
-				- Leiterplattendesign</br>
-				- Mechanische Konstruktion</br>
-				- Optimierung der Produktion
-			</p>
-		</div>
+		<div data-aos="fade" data-aos-once="true">
+			<div class="service">
+				<img src="images/entwicklung.jpg">
+				<h4>1.Entwicklung</h4>
+				<p>
+					- Einsetzbare Technologien</br>
+					- Schaltungsentwicklung</br>
+					- Firmeware-Erstellung</br>
+					- Leiterplattendesign</br>
+					- Mechanische Konstruktion</br>
+					- Optimierung der Produktion
+				</p>
+			</div>
 
-		<div class="service">
-			<img src="images/design.jpg">
-			<h4>2.Design</h4>
-			<p>
-				Der vorhandene Platz im Gehäuse wird durch die Formgebung der Elektronik effizient genutzt.
-				</br></br>
-				Die Baugruppe trägt zum funktionalen Aufbau der inneren Komponenten des Gerätes bei.
-			</p>
-		</div>
+			<div class="service">
+				<img src="images/design.jpg">
+				<h4>2.Design</h4>
+				<p>
+					Der vorhandene Platz im Gehäuse wird durch die Formgebung der Elektronik effizient genutzt.
+					</br></br>
+					Die Baugruppe trägt zum funktionalen Aufbau der inneren Komponenten des Gerätes bei.
+				</p>
+			</div>
 
-		<div class="service">
-			<img src="images/fertigung.jpg">
-			<h4>3.Fertigung</h4>
-			<p>
-				Die Montage und Bestückung wird an effizient eingerichteten Arbeitsplätzen ausgeführt, dadurch ist eine hohe Qualität der Baugruppen gewährleistet.
-				</br></br>
-				Alle Fertigungsschritte werden einer stetigen Qualitätssicherung unterzogen.
-			</p>
+			<div class="service">
+				<img src="images/fertigung.jpg">
+				<h4>3.Fertigung</h4>
+				<p>
+					Die Montage und Bestückung wird an effizient eingerichteten Arbeitsplätzen ausgeführt, dadurch ist eine hohe Qualität der Baugruppen gewährleistet.
+					</br></br>
+					Alle Fertigungsschritte werden einer stetigen Qualitätssicherung unterzogen.
+				</p>
+			</div>
 		</div>
 	</div>
 
@@ -107,7 +110,7 @@
 	<div id="produkte" class="showcase">
 		<h2>Unsere Produkte</h2>
 		<p>Pudding carrot cake sugar plum gummies cake apple pie tart cookie. Gummi bears toffee cupcake gingerbread chocolate apple pie tootsie roll chocolate.</p>
-		<div class="image-grid">
+		<div class="image-grid" data-aos="fade" data-aos-once="true">
 			<div class="image-container">
 				<img src="images/jjelectronics00.jpg">
 			</div>
@@ -139,7 +142,7 @@
 			<span>Jürgen Jockenhöfer</span>
 		</div>
 
-		<div class="contact-data">
+		<div class="contact-data" data-aos="fade-right" data-aos-once="true">
 			<div class="contact-data-item">
 				<i class="fa fa-envelope" aria-hidden="true"></i>
 				<span>E-mail</span>
@@ -147,7 +150,7 @@
 			</div>
 		</div>
 
-		<div class="contact-data">
+		<div class="contact-data" data-aos="fade" data-aos-once="true">
 			<div class="contact-data-item">
 				<i class="fa fa-phone" aria-hidden="true"></i>
 				<span>Telefon</span>
@@ -155,7 +158,7 @@
 			</div>
 		</div>	
 			
-		<div class="contact-data">
+		<div class="contact-data" data-aos="fade-left" data-aos-once="true">
 			<div class="contact-data-item">
 				<i class="fa fa-home" aria-hidden="true"></i>
 				<span>Adresse</span>
@@ -176,8 +179,13 @@
   <script src="js/scroll.js"></script>
   <script src="js/fixed-responsive-nav.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
+	<!-- scroll onTop animation -->
   <script>
+  	AOS.init({
+      disable: 'mobile'
+    });
 		$("a[href='#top']").click(function() {
 		   $("html, body").animate({ scrollTop: 0 }, "slow");
 		   return false;

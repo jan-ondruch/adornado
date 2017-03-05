@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+/* colors */
+body {
+  color: #161616;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Lato', sans-serif; }
+
+h2 {
+  color: #161616;
+  font-size: 1.7em;
+  margin-top: 10px; }
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: -18px;
+  margin-top: 0px;
+  padding-top: 24px; }
+
+h4 {
+  color: #00897e;
+  font-size: 24px;
+  margin-top: 0px;
+  padding-top: 24px; }
+
+:focus {
+  outline: none; }
+
+.header {
+  margin-top: 55px;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/microcontroller.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: #fff; }
+  .header .header-text h1 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    margin: 0 20px; }
+  @media screen and (min-width: 768px) {
+    .header .header-text h1 {
+      text-transform: uppercase;
+      font-size: 1.8em;
+      margin: 0 12%; } }
+  @media screen and (min-width: 1200px) {
+    .header .header-text h1 {
+      text-transform: uppercase;
+      font-size: 2.2em;
+      margin: 0 12%; } }
+
+.welcome-wrapper {
+  padding: 0px 0px;
+  padding-bottom: 4px; }
+  .welcome-wrapper .welcome {
+    padding: 10px 8px;
+    padding-bottom: 16px; }
+    .welcome-wrapper .welcome p {
+      font-size: 20px; }
+    .welcome-wrapper .welcome h3 {
+      padding-bottom: 3%; }
+    .welcome-wrapper .welcome:nth-child(2) {
+      color: #fff;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/wires.jpg") no-repeat center center;
+      background-size: cover; }
+    .welcome-wrapper .welcome:nth-child(3) {
+      background-color: #f2f2f2; }
+  @media screen and (min-width: 400px) {
+    .welcome-wrapper .welcome {
+      padding: 10px 16px;
+      padding-bottom: 16px; } }
+  @media screen and (min-width: 580px) {
+    .welcome-wrapper .welcome {
+      padding: 5% 16%;
+      padding-bottom: 5%; }
+    .welcome-wrapper p {
+      font-size: 24px; }
+    .welcome-wrapper h3 {
+      font-size: 30px;
+      padding-bottom: 10px; } }
+  @media screen and (min-width: 1200px) {
+    .welcome-wrapper .welcome p:nth-child(1) {
+      font-size: 28px; }
+    .welcome-wrapper .welcome h3 {
+      font-size: 32px;
+      padding-bottom: 3%; } }
+
+.service-wrapper {
+  padding: 16px 8px;
+  padding-bottom: 16px;
+  overflow: hidden;
+  background-image: linear-gradient(to top, #f2f2f2, #fff 10%); }
+  .service-wrapper p {
+    font-size: 18px;
+    padding: 8px;
+    padding-bottom: 16px; }
+  .service-wrapper h2 {
+    margin-bottom: -2%; }
+  .service-wrapper h4 {
+    margin-bottom: 0px; }
+  .service-wrapper .service {
+    padding: 24px 8px;
+    padding-bottom: 16px; }
+    .service-wrapper .service img {
+      width: 150px;
+      height: 150px; }
+    .service-wrapper .service p {
+      font-size: 18px;
+      color: #666; }
+  @media screen and (min-width: 464px) {
+    .service-wrapper .service {
+      padding: 24px 16%;
+      padding-bottom: 16px; }
+    .service-wrapper h2 {
+      margin-bottom: 0px; } }
+  @media screen and (min-width: 580px) {
+    .service-wrapper p {
+      padding-left: 16%;
+      padding-right: 16%; }
+    .service-wrapper p:nth-child(2) {
+      font-size: 20px; }
+    .service-wrapper h2 {
+      padding-top: 4%;
+      font-size: 30px; }
+    .service-wrapper h4 {
+      margin-bottom: 5%; } }
+  @media screen and (min-width: 1280px) {
+    .service-wrapper h2 {
+      font-size: 32px; } }
+
+@media screen and (min-width: 980px) {
+  .service-wrapper .service {
+    display: inline-block;
+    vertical-align: top;
+    width: 282px;
+    padding: 4% 1%;
+    padding-bottom: 4%; } }
+.showcase {
+  padding: 24px 0px;
+  padding-bottom: 16px;
+  background-color: #fff; }
+  .showcase h2 {
+    color: #161616; }
+  .showcase p {
+    font-size: 18px;
+    padding: 0px 8px;
+    padding-bottom: 16px; }
+  .showcase .image-grid {
+    -webkit-column-count: 3;
+    -webkit-column-gap: 4px;
+    -moz-column-count: 3;
+    -moz-column-gap: 4px;
+    column-count: 3;
+    column-gap: 4px; }
+    .showcase .image-grid .image-container img {
+      width: 100%;
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+      .showcase .image-grid .image-container img:hover {
+        opacity: 0.8; }
+  @media (min-width: 1000px) {
+    .showcase .image-grid {
+      -moz-column-count: 3;
+      -webkit-column-count: 3;
+      column-count: 3;
+      padding: 24px 10%;
+      padding-bottom: 16px; } }
+  @media (max-width: 800px) {
+    .showcase .image-grid {
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2; } }
+  @media (max-width: 400px) {
+    .showcase .image-grid {
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      column-count: 1; } }
+  @media screen and (min-width: 580px) {
+    .showcase {
+      padding: 5% 8px;
+      padding-bottom: 5%; }
+      .showcase h2 {
+        font-size: 30px; }
+      .showcase p {
+        padding-left: 16%;
+        padding-right: 16%; } }
+  @media screen and (min-width: 1200px) {
+    .showcase h2 {
+      font-size: 32px;
+      padding-bottom: 2px; } }
+
+.contact {
+  padding: 24px 8px;
+  padding-bottom: 24px;
+  background-color: #f2f2f2;
+  overflow: hidden; }
+  .contact h2 {
+    color: #161616; }
+  .contact .contact-person {
+    padding: 0px 0px;
+    padding-bottom: 32px; }
+    .contact .contact-person p {
+      font-size: 1.2em;
+      margin-bottom: 4px; }
+    .contact .contact-person span {
+      font-size: 1.5em; }
+  .contact .contact-data .contact-data-item {
+    padding: 0px 40px;
+    padding-bottom: 16px;
+    text-align: left; }
+    .contact .contact-data .contact-data-item i {
+      color: #00897e;
+      float: left;
+      font-size: 1.5em;
+      margin-right: 20px;
+      padding-top: 8px; }
+    .contact .contact-data .contact-data-item span {
+      display: block; }
+      .contact .contact-data .contact-data-item span:nth-child(2) {
+        text-transform: uppercase;
+        padding-bottom: 4px; }
+      .contact .contact-data .contact-data-item span:nth-child(3) {
+        color: #333; }
+    .contact .contact-data .contact-data-item a {
+      text-decoration: none;
+      color: #00897e; }
+      .contact .contact-data .contact-data-item a:hover {
+        color: #33997c; }
+  @media screen and (min-width: 400px) {
+    .contact .contact-data .contact-data-item {
+      padding: 0px 20%;
+      padding-bottom: 16px; } }
+  @media screen and (min-width: 580px) {
+    .contact {
+      padding: 5% 8px;
+      padding-bottom: 5%; }
+      .contact h2 {
+        font-size: 30px; } }
+  @media screen and (min-width: 768px) {
+    .contact .contact-data {
+      width: 220px;
+      display: inline-block; }
+      .contact .contact-data .contact-data-item {
+        padding: 10px 20px;
+        padding-bottom: 16%; } }
+  @media screen and (min-width: 1200px) {
+    .contact h2 {
+      font-size: 32px; } }
+
+.footer {
+  padding-top: 16px;
+  padding-bottom: 4px; }
+  .footer div img {
+    width: 100px;
+    height: auto;
+    padding-bottom: 20px; }
+  .footer span {
+    font-size: 0.8em;
+    color: #666; }
+  @media screen and (min-width: 580px) {
+    .footer {
+      padding-top: 32px; }
+      .footer div img {
+        width: 120px;
+        height: auto;
+        padding-bottom: 20px; } }
+
+/*# sourceMappingURL=style.css.map */
