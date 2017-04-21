@@ -3,7 +3,10 @@
 #author: Jan Ondruch
 
 DESCRIPTION:
-Website for JJ electronic.
+Simple website for JJ electronic.
+
+DEPLOYMENT:
+https://jan-ondruch.github.io/adornado/
 
 WHAT NEEDS TO BE DONE TO FULLY DEPLOY IT:
 Add better SEO.
