@@ -1,17 +1,12 @@
-#adornado: BETA webpage for JJ electronic
-#date: 23.2.2017
-#author: Jan Ondruch
+# adornado: BETA webpage for an electronics website with simple HTML, JS and SASS
 
-DESCRIPTION:
-Simple website for JJ electronic.
+Simple website for a electronics website JJ electronic.<br><br>
+Try the demo at: https://jan-ondruch.github.io/adornado/
 
-DEPLOYMENT:
-https://jan-ondruch.github.io/adornado/
-
-WHAT NEEDS TO BE DONE TO FULLY DEPLOY IT:
-Add better SEO.
-Clean up folders: images, minimize files.
-Replace Lorem Ipsum text.
-Improve header: better text, possibly CTA or make it more interactive.
-Improve image grid possibly: image captions, whatever.
+## What needs to be done to fully deploy the website:
+Add better SEO.<br>
+Clean up folders: images, minimize files.<br>
+Replace Lorem Ipsum text.<br>
+Improve header: better text, possibly CTA or make it more interactive.<br>
+Improve image grid possibly: image captions, whatever.<br>
 Add Favicon (JJ electronic logo).
