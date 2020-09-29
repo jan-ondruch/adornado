@@ -1,4 +1,4 @@
-# adornado: BETA webpage for an electronics website with simple HTML, JS and SASS
+# adornado: A website concept for an electronics website with simple HTML, JS and SASS.
 
 Simple website for a electronics website JJ electronic.<br><br>
 Try the demo at: https://jan-ondruch.github.io/adornado/
